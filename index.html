@@ -13,51 +13,81 @@
 
 </head>
 
-<body class="p-3 m-0 border-0 bd-example m-0 border-0">
+<body class="m-0 border-0 bd-example m-0 border-0">
 
     <!-- Example Code -->
-    <header>
-        <nav class="navbar navbar-dark bg-dark fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Jonathan Vitangeli</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
-                    aria-labelledby="offcanvasDarkNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel" href="#">
-                            <a class="navbar-brand" href="#">Inicio</a>
-                        </h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="inicio" class="hero-section">
+            <div class="hero-overlay">
+                <div class="hero-content">
+                    <h1 class="hero-title">Jonathan Vitangeli</h1>
+                    <p class="hero-subtitle">Desarrollador en Formación</p>
+                    <div class="about-me">
+                        <p>Hola, soy Jonathan Vitangeli. Actualmente estudio programación y me apasiona el desarrollo de software. Estoy aprendiendo diversos lenguajes de programación y herramientas para mejorar mis habilidades y contribuir a proyectos interesantes. Mi objetivo es seguir creciendo como desarrollador y enfrentar nuevos desafíos en el mundo de la tecnología.</p>
                     </div>
-                    <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="educacio.html">Educación</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="experiencia.html">Experiencias</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="aptitudes.html">Aptitudes</a>
-                            </li>
-                        </ul>
+                    <a href="#edu-apt" class="btn btn-primary btn-lg hero-btn">Ver Mis Aptitudes</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tab: Educación y Aptitudes -->
+        <section id="edu-apt" class="tab-section">
+            <h1 class="main-title">Educación y Aptitudes</h1>
+
+            <div class="container-cover-edu">
+                <img src="img/Certificado Desarrollo Web.png" alt="Certificado Desarrollo Web" class="img-small modal-img" />
+            </div>
+
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Lenguajes de Programación</h3>
+                    <div class="imgs">
+                        <img src="img/aptitudes/java.svg" alt="Java" class="img-resize modal-img skill-icon">
+                        <img src="img/aptitudes/csharp.svg" alt="C#" class="img-resize modal-img skill-icon">
+                        <img src="img/aptitudes/javascript.svg" alt="JavaScript" class="img-resize modal-img skill-icon">
+                        <img src="img/aptitudes/python.svg" alt="Python" class="img-resize modal-img skill-icon">
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tecnologías FrontEnd</h3>
+                    <div class="imgs">
+                        <img src="img/aptitudes/bootstrap.svg" alt="Bootstrap" class="img-resize modal-img skill-icon">
+                        <img src="img/aptitudes/css.svg" alt="CSS" class="img-resize modal-img skill-icon">
+                        <img src="img/aptitudes/html5.svg" alt="HTML5" class="img-resize modal-img skill-icon">
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Bases de Datos</h3>
+                    <div class="imgs">
+                        <img src="img/aptitudes/mysql.svg" alt="MySQL" class="img-resize modal-img skill-icon">
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Herramientas Adicionales</h3>
+                    <div class="imgs">
+                        <img src="img/aptitudes/git.svg" alt="Git" class="img-resize modal-img skill-icon">
+                        <img src="img/aptitudes/github-dark.svg" alt="GitHub" class="img-resize modal-img skill-icon">
                     </div>
                 </div>
             </div>
-        </nav>
-    </header>
-    <main class="main-content">
-        <h1 class="main-title">Sobre Mí</h1>
-        <div class="about-me">
-            <p>Hola, soy Jonathan Vitangeli. Actualmente estudio programación y me apasiona el desarrollo de software. Estoy aprendiendo diversos lenguajes de programación y herramientas para mejorar mis habilidades y contribuir a proyectos interesantes. Mi objetivo es seguir creciendo como desarrollador y enfrentar nuevos desafíos en el mundo de la tecnología.</p>
+
+        </section>
+
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
         </div>
+
     </main>
 
+    <div class="text-center cta-experiencias" style="margin: 36px 0;">
+        <a href="experiencia.html" class="btn btn-primary btn-lg d-block mx-auto" role="button" style="width: fit-content;">Proyectos</a>
+        <div style="margin-top:12px;">
+            <a href="experiencia.html"><img src="img/Gestor de Presupuesto Personal.PNG" alt="Experiencias thumbnail" style="max-width:180px;border-radius:8px;margin-top:8px;display: block; margin-left: auto; margin-right: auto;" /></a>
+        </div>
+    </div>
 
     <footer class="container-footer">
 
@@ -72,6 +102,8 @@
         <hr>
         <h4> &copy; 2024 Jonathan Vitangeli. Todos los derechos reservados.</h4>
     </footer>
+
+    <script src="script.js"></script>
 
     <!-- End Example Code -->
 </body>
